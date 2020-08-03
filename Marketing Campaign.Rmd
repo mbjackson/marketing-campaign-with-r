@@ -1,0 +1,134 @@
+---
+title: 'Using Data to Improve a Marketing Promotion'
+author: "Matt Jackson"
+date: "December 10, 2019"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load Required Libraries
+
+```{r warning=FALSE, message=FALSE}
+library("ggplot2")
+library("Hmisc")
+library("dplyr")
+library("lubridate")
+```
+
+## Load Transformed Dodgers Dataset
+
+```{r}
+# Load Dataset
+dodgers <- read.csv("../dodgers_transformed.csv")
+
+# Convert Variables to the Right Types
+dodgers$date <- as.Date(dodgers$date)
+dodgers$month <- month(dodgers$date)
+dodgers$cap <- as.logical(dodgers$cap)
+dodgers$shirt <- as.logical(dodgers$shirt)
+dodgers$fireworks <- as.logical(dodgers$fireworks)
+dodgers$bobblehead <- as.logical(dodgers$bobblehead)
+
+# Reorder Days of the Week
+dodgers$day_of_week <- factor(dodgers$day_of_week, levels = c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"))
+
+# Create Promo Column
+dodgers$promo <- FALSE
+dodgers$promo[dodgers$cap==TRUE] <- TRUE
+dodgers$promo[dodgers$shirt==TRUE] <- TRUE
+dodgers$promo[dodgers$fireworks==TRUE] <- TRUE
+dodgers$promo[dodgers$bobblehead==TRUE] <- TRUE
+```
+
+## Plot Scatterplot for Attendance over Time with Days of the Week Colored
+
+```{r}
+ggplot(dodgers, aes(x=date, y=attend, color=day_of_week)) +
+  geom_point(size=2) +
+  xlab("Date") +
+  ylab("Attendance (Number of People)") + 
+  labs(color="Day of the Week")
+```
+
+## Plot Boxplots for Each Day of the Week
+
+```{r}
+ggplot(dodgers, aes(x=day_of_week, y=attend)) +
+  geom_boxplot() +
+  xlab("Day of the Week") +
+  ylab("Attendance (Number of People)")
+```
+
+## Plot of Promos Being Ran on Mondays
+
+```{r}
+dogers_monday <- subset(dodgers, day_of_week=="Monday")
+
+ggplot(dogers_monday, aes(x=promo)) +
+  geom_bar() +
+  xlab("Promotion Ran?") +
+  ylab("Count")
+```
+
+## Simple Regression Model with Just Day of the Week
+
+```{r}
+simple <- lm(attend ~ day_of_week, data=dodgers)
+summary(simple)
+```
+
+## Create DF to Predict New Attendance Values
+
+```{r}
+days <- data.frame("day_of_week" = c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"))
+days$day_of_week <- factor(days$day_of_week, levels = c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"))
+```
+
+## Predict Values with Simple Regression Model
+
+```{r}
+predict(simple, days)
+```
+
+## Multiple Regression Model with Day of the Week and Promo
+
+```{r}
+multiple <- lm(attend ~ day_of_week + promo, data=dodgers)
+summary(multiple)
+```
+
+## Add Column for Promo (No Promos Being Run)
+
+```{r}
+days$promo <- c(FALSE, FALSE, FALSE, FALSE, FALSE, FALSE, FALSE)
+```
+
+## Predict Values with Multiple Regression Model (No Promos)
+
+```{r}
+days_with_no_promos <- predict(multiple, days)
+```
+
+## Add Column for Promo (Promos Being Run)
+
+```{r}
+days$promo <- c(TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE)
+```
+
+## Predict Values with Multiple Regression Model (Promos)
+
+```{r}
+days_with_promos <- predict(multiple, days)
+```
+
+## Calculate Difference 
+
+```{r}
+days_with_promos - days_with_no_promos
+```
+
+## Conclusion
+When the scatterplot and boxplots were produced, it is clear that Monday has the lowest attendance. After applying a simple and multiple linear regression model, that still reamined true somewhat (in the mutliple model Sunday had slightly lower attendance). Running a multiple linear regression model taking into account how promos affect attendance, on average the attendance lift is about 10,600 people.

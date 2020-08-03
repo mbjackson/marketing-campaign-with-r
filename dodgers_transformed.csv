@@ -1,0 +1,82 @@
+date,month,day,attend,day_of_week,opponent,temp,skies,day_night,cap,shirt,fireworks,bobblehead
+2012-04-10,Apr,10,56000,Friday,Pirates,67,Clear ,Day,False,False,False,False
+2012-04-11,Apr,11,29729,Saturday,Pirates,58,Cloudy,Night,False,False,False,False
+2012-04-12,Apr,12,28328,Thursday,Pirates,57,Cloudy,Night,False,False,False,False
+2012-04-13,Apr,13,31601,Sunday,Padres,54,Cloudy,Night,False,False,True,False
+2012-04-14,Apr,14,46549,Tuesday,Padres,57,Cloudy,Night,False,False,False,False
+2012-04-15,Apr,15,38359,Wednesday,Padres,65,Clear ,Day,False,False,False,False
+2012-04-23,Apr,23,26376,Monday,Braves,60,Cloudy,Night,False,False,False,False
+2012-04-24,Apr,24,44014,Friday,Braves,63,Cloudy,Night,False,False,False,False
+2012-04-25,Apr,25,26345,Saturday,Braves,64,Cloudy,Night,False,False,False,False
+2012-04-27,Apr,27,44807,Sunday,Nationals,66,Clear ,Night,False,False,True,False
+2012-04-28,Apr,28,54242,Tuesday,Nationals,71,Clear ,Night,False,False,False,True
+2012-04-29,Apr,29,48753,Wednesday,Nationals,74,Clear ,Day,False,True,False,False
+2012-05-07,May,7,43713,Monday,Giants,67,Clear ,Night,False,False,False,False
+2012-05-08,May,8,32799,Friday,Giants,75,Clear ,Night,False,False,False,False
+2012-05-09,May,9,33993,Saturday,Giants,71,Clear ,Night,False,False,False,False
+2012-05-11,May,11,35591,Sunday,Rockies,65,Clear ,Night,False,False,True,False
+2012-05-12,May,12,33735,Tuesday,Rockies,65,Clear ,Night,False,False,False,False
+2012-05-13,May,13,49124,Wednesday,Rockies,70,Clear ,Day,False,False,False,False
+2012-05-14,May,14,24312,Monday,Snakes,67,Clear ,Night,False,False,False,False
+2012-05-15,May,15,47077,Friday,Snakes,70,Clear ,Night,False,False,False,True
+2012-05-18,May,18,40906,Sunday,Cardinals,64,Clear ,Night,False,False,True,False
+2012-05-19,May,19,39383,Tuesday,Cardinals,67,Clear ,Night,False,False,False,False
+2012-05-20,May,20,44005,Wednesday,Cardinals,77,Clear ,Night,False,False,False,False
+2012-05-25,May,25,36283,Sunday,Astros,59,Cloudy,Night,False,False,True,False
+2012-05-26,May,26,36561,Tuesday,Astros,61,Cloudy,Night,False,False,False,False
+2012-05-27,May,27,33306,Wednesday,Astros,70,Clear ,Day,False,False,False,False
+2012-05-28,May,28,38016,Monday,Brewers,73,Clear ,Night,False,False,False,False
+2012-05-29,May,29,51137,Friday,Brewers,74,Clear ,Night,False,False,False,True
+2012-05-30,May,30,25509,Saturday,Brewers,69,Clear ,Night,False,False,False,False
+2012-05-31,May,31,26773,Thursday,Brewers,70,Clear ,Night,False,False,False,False
+2012-06-11,Jun,11,50559,Monday,Angels,68,Clear ,Night,False,True,False,False
+2012-06-12,Jun,12,55279,Friday,Angels,66,Cloudy,Night,False,False,False,True
+2012-06-13,Jun,13,43494,Saturday,Angels,67,Clear ,Night,False,False,False,False
+2012-06-15,Jun,15,40432,Sunday,White Sox,67,Clear ,Night,False,False,True,False
+2012-06-16,Jun,16,45210,Tuesday,White Sox,68,Clear ,Night,False,False,False,False
+2012-06-17,Jun,17,53504,Wednesday,White Sox,74,Clear ,Day,False,False,False,False
+2012-06-28,Jun,28,49006,Thursday,Mets,75,Clear ,Night,False,False,False,True
+2012-06-29,Jun,29,49763,Sunday,Mets,72,Clear ,Night,False,False,True,False
+2012-06-30,Jun,30,44217,Tuesday,Mets,78,Clear ,Day,False,False,False,False
+2012-07-01,Jul,1,55359,Wednesday,Mets,75,Clear ,Night,False,False,False,True
+2012-07-02,Jul,2,34493,Monday,Reds,70,Clear ,Night,False,False,False,False
+2012-07-03,Jul,3,33884,Friday,Reds,70,Cloudy,Night,True,False,False,False
+2012-07-04,Jul,4,53570,Saturday,Reds,70,Clear ,Night,False,False,True,False
+2012-07-13,Jul,13,43873,Sunday,Padres,76,Cloudy,Night,False,False,True,False
+2012-07-14,Jul,14,54014,Tuesday,Padres,75,Clear ,Night,False,False,False,True
+2012-07-15,Jul,15,39715,Wednesday,Padres,77,Clear ,Day,False,False,False,False
+2012-07-16,Jul,16,32238,Monday,Phillies,67,Clear ,Night,False,False,False,False
+2012-07-17,Jul,17,53498,Friday,Phillies,70,Clear ,Night,False,False,False,False
+2012-07-18,Jul,18,39955,Saturday,Phillies,80,Cloudy,Day,False,False,False,False
+2012-07-30,Jul,30,33180,Monday,Snakes,73,Clear ,Night,False,False,False,False
+2012-07-31,Jul,31,52832,Friday,Snakes,75,Cloudy,Night,False,False,False,True
+2012-08-01,Aug,1,36596,Saturday,Snakes,79,Clear ,Day,False,False,False,False
+2012-08-03,Aug,3,43537,Sunday,Cubs,73,Clear ,Night,False,False,True,False
+2012-08-04,Aug,4,46588,Tuesday,Cubs,73,Cloudy,Night,False,False,False,False
+2012-08-05,Aug,5,42495,Wednesday,Cubs,83,Clear ,Day,True,False,False,False
+2012-08-06,Aug,6,32659,Monday,Rockies,79,Clear ,Night,False,False,False,False
+2012-08-07,Aug,7,55024,Friday,Rockies,80,Clear ,Night,False,False,False,True
+2012-08-08,Aug,8,37084,Saturday,Rockies,84,Clear ,Night,False,False,False,False
+2012-08-20,Aug,20,36878,Monday,Giants,80,Clear ,Night,False,False,False,False
+2012-08-21,Aug,21,56000,Friday,Giants,75,Clear ,Night,False,False,False,True
+2012-08-22,Aug,22,40173,Saturday,Giants,75,Clear ,Night,False,False,False,False
+2012-08-24,Aug,24,39805,Sunday,Marlins,71,Clear ,Night,False,False,True,False
+2012-08-25,Aug,25,40284,Tuesday,Marlins,70,Clear ,Night,False,False,False,False
+2012-08-26,Aug,26,41907,Wednesday,Marlins,81,Clear ,Day,False,False,False,False
+2012-08-30,Aug,30,54621,Thursday,Snakes,80,Clear ,Night,False,False,False,True
+2012-08-31,Aug,31,37622,Sunday,Snakes,77,Clear ,Night,False,False,True,False
+2012-09-01,Sep,1,35992,Tuesday,Snakes,81,Clear ,Night,False,False,False,False
+2012-09-02,Sep,2,31607,Wednesday,Snakes,89,Clear ,Day,False,False,False,False
+2012-09-03,Sep,3,33540,Monday,Padres,84,Cloudy,Night,False,False,False,False
+2012-09-04,Sep,4,40619,Friday,Padres,78,Clear ,Night,False,True,False,False
+2012-09-05,Sep,5,50560,Saturday,Padres,77,Cloudy,Night,False,False,False,False
+2012-09-13,Sep,13,43309,Thursday,Cardinals,80,Clear ,Night,False,False,False,False
+2012-09-14,Sep,14,40167,Sunday,Cardinals,85,Clear ,Night,False,False,True,False
+2012-09-15,Sep,15,42449,Tuesday,Cardinals,95,Clear ,Night,False,False,False,False
+2012-09-16,Sep,16,35754,Wednesday,Cardinals,86,Clear ,Day,False,False,False,False
+2012-09-28,Sep,28,37133,Sunday,Rockies,77,Clear ,Night,False,False,True,False
+2012-09-29,Sep,29,40724,Tuesday,Rockies,84,Cloudy,Night,False,False,False,False
+2012-09-30,Sep,30,35607,Wednesday,Rockies,95,Clear ,Day,False,False,False,False
+2012-10-01,Oct,1,33624,Monday,Giants,86,Clear ,Night,False,False,False,False
+2012-10-02,Oct,2,42473,Friday,Giants,83,Clear ,Night,False,False,False,False
+2012-10-03,Oct,3,34014,Saturday,Giants,82,Cloudy,Night,False,False,False,False
